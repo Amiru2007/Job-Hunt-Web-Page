@@ -4,7 +4,7 @@
     font-family: 'Poppins';
 }
 
- html {
+html {
     scroll-behavior: smooth;
 }
 
@@ -106,14 +106,14 @@ nav .buttons a {
 }
 
 @keyframes slideInBottom {
-  0%   {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    0%   {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .middle .content .left {
@@ -170,48 +170,113 @@ nav .buttons a {
     height: 100%;
 }
 
-.middle .two {
-    padding: 20px 40px;
+.rates {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.rates .head-title {
+    width: 100%;
+    height: 45px;
+    color:#361D32;
+    font-size: 20px;
+    padding: 60px 0 30px 0;
+}
+
+.rates .companies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8px;
+    margin: 15px -8px;
+    color: #361d32;
+    width: 100%;
+    background-color:#EDD2CB;
+}
+
+.rates .companies .company {
+    width: 153px;
+    height: auto;
+}
+
+.rates .companies .left-corner {
+    padding-left: 70px
+}
+
+.rates .companies .right-corner {
+    padding-right: 70px
+}
+
+.rates .comments {
+    padding-top: 36px;
     width: 80%;
-    height: 500px;
+    height: 310px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.middle .two .header-tags {
-    padding: 20px 40px;
-    color: #361d32;
-    font-size: 16px;
+.rates .comments .person {
+    width: calc(80% / 3);
+    height: 100%;
+    margin: 5px 25px;
+    background: #FFFFFF;
+    border-radius: 10px;
 }
 
-.middle .two .header-tags .header-tags-year {
-    background: linear-gradient(93.51deg, #361d32 2.84%, #f55951 99.18%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 24px;
+.rates .comments .person .head {
+    margin-top: 20px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
 }
 
-.middle .two .header-tags .tags {
-    padding: 20px 40px;
-    color: #361d32;
-    font-size: 16px;
+.rates .comments .person .head img {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    border: 0.5px solid #361D32;
+    border-radius: 50%;
 }
 
-.middle .two .tags a {
-    border: 1px solid #543c52;
-    border-radius: 515px;
-    padding: 0px 20px;
-    text-decoration: none;
-    color: inherit;
-    line-height: 30px;
-    transition: 0.2s ease-in-out;
+.rates .comments .person .head h3 {
+    margin: 0 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.middle .two .tags a:hover {
-    background: #edd2cb;
-    border: 1px solid #543c52;
-    border-radius: 515px;
-    padding: 0px 20px;
-    text-decoration: none;
-    color: inherit;
-    line-height: 30px;
+.rates .comments .person .head h3 .poss {
+    color: #7B6D79;
+}
+
+.rates .comments .person p {
+    margin-top: 20px;
+    width: 85%;
+    text-align: justify;
+    font-size: 12px;
+    color: #361D32;
+}
+
+.rates .comments .follow {
+    margin-top: 17px;
+    width: 109.7px;
+    height: 28px;
+    background: #361D32;
+    color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rates .comments .follow h4 {
+    font-size: 12px;
+    font-weight: 400;
 }
