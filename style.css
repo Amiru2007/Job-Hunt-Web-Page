@@ -154,9 +154,17 @@ nav .buttons a {
     border: 1px solid #f55951;
     border-radius: 25px;
     transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    cursor: pointer;
 }
 
-.middle .content .right .explore button:hover {
+.middle .content .left .explore button:hover {
     padding: 5px 30px;
 }
 
@@ -181,7 +189,7 @@ nav .buttons a {
     height: 45px;
     color:#361D32;
     font-size: 20px;
-    padding: 60px 0 30px 0;
+    padding: 110px 0 50px 0;
 }
 
 .rates .companies {
@@ -198,6 +206,7 @@ nav .buttons a {
 .rates .companies .company {
     width: 153px;
     height: auto;
+    cursor: pointer;
 }
 
 .rates .companies .left-corner {
@@ -211,7 +220,7 @@ nav .buttons a {
 .rates .comments {
     padding-top: 36px;
     width: 80%;
-    height: 310px;
+    height: 290px;
     background: transparent;
     display: flex;
     align-items: center;
@@ -244,15 +253,21 @@ nav .buttons a {
     border-radius: 50%;
 }
 
-.rates .comments .person .head h3 {
+.rates .comments .person .head a {
     margin: 0 20px;
     width: 200px;
     height: 40px;
     font-size: 14px;
     font-weight: 600;
+    text-decoration: none;
+    color: #361D32;
 }
 
-.rates .comments .person .head h3 .poss {
+.rates .comments .person .head a:hover {
+    text-decoration: underline;
+}
+
+.rates .comments .person .head a .poss {
     color: #7B6D79;
 }
 
@@ -265,18 +280,34 @@ nav .buttons a {
 }
 
 .rates .comments .follow {
+    width: 109.7px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.rates .comments .follow button {
+    border: 1px solid #361D32;
     margin-top: 17px;
     width: 109.7px;
     height: 28px;
     background: #361D32;
     color: #FFFFFF;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
 }
 
-.rates .comments .follow h4 {
+.rates .comments .follow button:hover {
+    border: 1px solid #361D32;
+    background: transparent;
+    color: #361D32;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 12px;
     font-weight: 400;
 }
